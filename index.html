@@ -40,7 +40,7 @@
     return;
   }
 
-  var slow = setTimeout(function () { p.textContent = 'Still working — this can take 20 seconds.'; }, 6000);
+  var slow = setTimeout(function () { p.textContent = 'Still working — this can take up to a minute.'; }, 6000);
   var url = u + '?action=regenerate&format=json&k=' + encodeURIComponent(k);
 
   fetch(url, { redirect: 'follow', credentials: 'omit', cache: 'no-store' })
